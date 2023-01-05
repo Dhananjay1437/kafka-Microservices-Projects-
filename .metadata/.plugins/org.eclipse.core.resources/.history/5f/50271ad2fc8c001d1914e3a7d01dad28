@@ -1,5 +1,0 @@
-spring.kafka.producer.bootstap.servers:localhost:9092
-#if multiple server put comma seperated port like localhost:9092,localhost:9093
-spring.kafka.producer.key-serializer: org.apache.kafka.common.serialization.StringSerializer
-spring.kafka.producer.value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
-spring.kafka.topic.name=order_topics

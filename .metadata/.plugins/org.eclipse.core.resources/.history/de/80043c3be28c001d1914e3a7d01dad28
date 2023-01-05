@@ -1,5 +1,0 @@
-package com.javaguide.orderservice.kafka;
-
-public class OrderProducer {
-
-}
