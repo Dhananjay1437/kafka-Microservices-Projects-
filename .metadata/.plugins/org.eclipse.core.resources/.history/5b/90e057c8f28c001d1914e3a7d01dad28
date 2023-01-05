@@ -1,0 +1,27 @@
+package com.javaguide.orderservice.kafka;
+
+import org.apache.kafka.clients.admin.NewTopic;
+import org.springframework.kafka.core.KafkaTemplate;
+import org.springframework.stereotype.Service;
+
+import com.javaguide.basedomain.dto.OrderEvent;
+
+import lombok.extern.slf4j.Slf4j;
+
+@Service
+@Slf4j
+public class OrderProducer {
+
+	private NewTopic topic;
+	
+	private KafkaTemplate<String,OrderEvent> kafkaTemplate;
+	
+	public OrderProducer(NewTopic topic,KafkaTemplate<String,OrderEvent> kafkaTemplate) {
+		this.kafkaTemplate=kafkaTemplate;
+		this.topic=topic;
+	}
+	
+	public void sendMessage(OrderEvent event) {
+		
+	}
+}

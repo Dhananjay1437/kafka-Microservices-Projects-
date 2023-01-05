@@ -1,0 +1,5 @@
+package com.javaguide.stockservice.kafka;
+
+public class OrderConsumer {
+
+}

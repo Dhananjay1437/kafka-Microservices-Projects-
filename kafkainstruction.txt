@@ -1,0 +1,32 @@
+link to download:https://kafka.apache.org/downloads
+In the latest version kafka_2.12-3.1.0 (2022) after unzipping and setting the properties and logs.
+keep the Kafka folder on the C drive and always run the command prompt with 'run as administrator'. 
+The .bat file is for windows
+
+Terminal 1
+
+C:\kafka\bin\windows>zookeeper-server-start.bat ..\..\config\zookeeper.properties
+or in C:\kafka>.\bin\windows\zookeeper-server-start.bat .\config\zookeeper.properties
+Terminal 2
+
+C:\kafka\bin\windows>kafka-server-start.bat ..\..\config\server.properties
+or C:\kafka>.\bin\windows\kafka-server-start.bat .\config\server.properties
+
+Terminal 3
+Created topic tutorialspedia.
+
+C:\kafka\bin\windows>kafka-topics.bat --create --topic tutorialspedia --bootstrap-server localhost:9092
+
+
+
+To checklist of topic created
+
+C:\kafka\bin\windows>kafka-topics.bat --list --bootstrap-server localhost:9092 tutorialspedia
+
+Produce a message
+
+kafka-console-producer.bat --broker-list localhost:9092 --topic tutorialspedia
+
+Consume a message
+
+kafka-console-consumer.bat --bootstrap-server localhost:9092 --topic tutorialspedia

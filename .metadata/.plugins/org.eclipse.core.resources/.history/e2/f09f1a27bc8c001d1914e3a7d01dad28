@@ -1,0 +1,5 @@
+package com.javatechie.spring.kafka.api;
+
+public class KafkaConsumerController {
+
+}

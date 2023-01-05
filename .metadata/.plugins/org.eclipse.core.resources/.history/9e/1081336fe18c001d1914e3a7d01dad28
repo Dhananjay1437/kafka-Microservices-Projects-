@@ -1,0 +1,5 @@
+package com.javaguide.orderservice.config;
+
+public class KafkaTopicConfig {
+
+}
