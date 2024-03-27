@@ -1,5 +1,9 @@
 link to download:https://kafka.apache.org/downloads
-In the latest version kafka_2.12-3.1.0 (2022) after unzipping and setting the properties and logs.
+In the latest version kafka_2.12-3.1.0 (2022)
+Binary downloads:
+Scala 2.12  - kafka_2.12-3.7.0.tgz (asc, sha512)
+
+after unzipping and setting the properties and logs.
 keep the Kafka folder on the C drive and always run the command prompt with 'run as administrator'. 
 The .bat file is for windows
 
